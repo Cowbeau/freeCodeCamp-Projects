@@ -1,0 +1,129 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">First and Last Name</label>
+        <label for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Bob Smith" required /></label>
+        <label id="email-label">Email Address</label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="bobsmith@mail.mail" required /></label>
+        <label id="number-label">Actual Age</label>
+        <label for="number">Enter Your Age: <input id="number" type="number" min="13" max="120" placeholder="25" required /><label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-travel"><input id="personal-travel" type="radio" name="travel-type" value="travel" class="inline" /> Personal Travel</label>
+        <label for="business-travel"><input id="business-travel" type="radio" name="travel-type" value="travel" class="inline" /> Business Travel</label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Which country would you like to visit?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Japan</option>
+            <option value="2">Iceland</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+      <fieldset>
+        <label for="solo traveler"><input id="solo traveler" type="checkbox" value="travlers" class="inline" />Solo Traveler</label>
+        <label for="solo traveler"><input id="solo traveler" type="checkbox" value="travlers" class="inline" />Two Travelers</label>
+        <label for="solo traveler"><input id="solo traveler" type="checkbox" value="travlers" class="inline" />Three Travelers</label>
+        <label for="solo traveler"><input id="solo traveler" type="checkbox" value="travlers" class="inline" />Group Travel</label>
+      </fieldset>
+      <fieldset>
+        <label for="additional comments">Additional Comments
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I love to travel! "></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+    
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #003314;
+  color: #f5f6f7;
+  font-family: Papyrus;
+  font-size: 17px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #e1c699;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #d2b48c;
+  border: 1px solid #0a0a23;
+  color: #000000;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #d2b48c;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+** end of undefined **
+
