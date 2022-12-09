@@ -5,7 +5,7 @@ My freeCodeCamp certification projects!
 
 Table Of Contents:
 
-1. HTML Projects
+1. HTML and CSS Projects
 2. JavaScript Projects
 3. Front End Development Libraries Projects
 4. Data Visualization Projects
