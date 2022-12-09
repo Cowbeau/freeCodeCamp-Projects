@@ -1,0 +1,122 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <main id="main"
+<div id="main">
+    <header>
+      <div id="title">
+        <h1>Ernest Hemingway</h1>
+        <p>Papa's Legendary Life</p>
+      </div>
+      <figure id="img-div">
+        <img src="https://karsh.org/wordpress/wp-content/uploads/2016/10/Yousuf-Karsh-Ernest-Hemingway-1957-1558x1960.jpg" alt="Ernest Hemingway Portrait" id="image">
+        <figcaption id="img-caption">A portrait of Ernest Hemingway. Source<a href="https://karsh.org/photographs/ernest-hemingway/"> Karsh.org</a>.</figcaption>
+      </figure>
+    </header>
+    <main
+    id="tribute-info">
+      <h3>A timeline of Ernest Hemingway's adventurous life:</3>
+      <ul>
+        <li><strong>1899</strong> - Hemingway is born in Oak Park, Illinois and started writing in a newspaper office at 17.</li>
+        <li><strong>1918</strong> - Hemingway joined the Red Cross, first going to Paris, then Milan.</li>
+        <li><strong>1925</strong> - 'In Our Time' a collection of short stories, is published.</li>
+        <li><strong>1928</strong> - Ernest Hemingway moves to Key West.</li>
+        <li><strong>1929</strong> - 'A Farewell To Arms' is published and becomes critically acclaimed.</li>
+        <li><strong>1933</strong> - Ernest Hemingway travels to Africa, hunting and gathering material for furture writing.</li>
+        <li><strong>1940</strong> - 'For Whom The Bell Tolls' is published and sells over 500,000 copies in six months.</li>
+        <li><strong>1952</strong> - 'Old Man and the Sea' is published and sells over 5 million copies almost overnight.</li>
+        <li><strong>1953</strong> - Ernest Hemingway wins the Pulitzer Prize for Literature for Old Man and the Sea.</li>
+        <li><strong>1954</strong> - Ernest Hemingway wins the Nobel Prize for Literature for Old Man and the Sea.</li>
+        <li><strong>1960</strong> - Ernest Hemingway moves to Idaho.</li>
+        <li><strong>1961</strong> - Ernest Hemingway commits suicide after battling with depression and paranoia.</li>
+   </ul>
+
+<figure>
+    <p><em>"“In order to write about life first you must live it."</em></p>
+    <figcaption><em>-- Ernest Hemingway</em></figcaption>
+</figure>
+<p class="disclaimer"><small>*Timeline details courtesy of <a href="https://worldhistoryproject.org/topics/ernest-hemingway/">World History Project</a></small>.</p>
+    </main>
+
+    <footer>
+     <h3>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Ernest_Hemingway" id="tribute-link" target="_blank">Wikipedia entry</a>.</h3>
+    </footer>
+  </div> 
+
+** end of undefined **
+
+** start of undefined **
+
+
+#main {
+  background-color: 927247;
+  margin: 30px 0;
+  font-family: sans-serif; 
+  font-weight: 300;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#title {
+  font-size: 150%;
+  padding-top: 50px;
+}
+
+#img-div {
+  background-color: #6D5843;
+  margin: 40px 20px;
+  padding: 20px 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+#tribute-info {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+  #tribute-info {
+    width: 90%;
+  }
+}
+
+#tribute-info :not(h3) {
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+h3, ul {
+  margin-bottom: 40px;
+}
+
+ul li {
+  margin: 15px 0;
+}
+
+ul li strong {
+  font-weight: 600;
+}
+
+.disclaimer {
+  margin-top: 30px;
+}
+
+footer {
+  padding: 5px;
+  line-height: 1.5rem;
+}
+
+
+
+** end of undefined **
+
