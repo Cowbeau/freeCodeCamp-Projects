@@ -1,0 +1,431 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css"></html>
+<div id="main">
+  
+  <header id="header">
+  <!-- logo -->
+    <a href="https://1000logos.net/apple-logo/" target="_blank"><img src="https://1000logos.net/apple-logo/" id="header-img" /></a>
+    
+  <!-- navigation -->
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#shop" class="nav-link">Shop</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#guides" class="nav-link">Guides</a></li>
+      </ul>
+      
+    </nav>
+ 
+  </header>
+  
+  <main> 
+    <!-- ********* Simple Form ********* -->
+    <div id="subscribe">
+      <h3 id="promo-title">Get the tech products you need</h3>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input type="email" name="email" id="email" placeholder="Enter your email..." />
+        <input type="submit" id="submit" value="Subscribe" />
+      </form>
+    </div>
+    
+    <!--   shop section -->
+  <div id="shop" class="content">
+    <div id="phone" class="feat-prod">
+      <div class="img"><img src="https://unsplash.com/photos/e31ANd1PXUw/" alt="The best phones available"></div>
+      <div class="marketing-desc">
+        <h3>Phones</h3>
+        <p>Nullam efficitur, tortor eget tempor rutrum, velit dolor bibendum ante, eu varius neque ex a elit. Nulla eleifend lorem ex, ac rhoncus nisi rhoncus in.</p>
+      </div>
+    </div>
+    
+        <div id="laptops" class="feat-prod">
+      <div class="img"><img src="https://unsplash.com/photos/RSCirJ70NDM/" alt="Amazing Laptops"></div>
+      <div class="marketing-desc">
+        <h3>Laptops</h3>
+        <p>Maecenas vestibulum ullamcorper erat viverra facilisis. Vestibulum rutrum aliquam diam ultricies viverra.</p>
+      </div>
+    </div>
+    
+        <div id="hair" class="feat-prod">
+      <div class="img"><img src="https://unsplash.com/photos/hLgYtX0rPgw/" alt="Tablets."></div>
+      <div class="marketing-desc">
+        <h3>Tablets</h3>
+        <p>Proin imperdiet consectetur accumsan. Maecenas sit amet ligula ex. Aliquam nisi dolor, facilisis quis lectus nec, convallis elementum massa.</p>
+      </div>
+    </div>
+  </div>
+  
+<!--   reviews section -->
+  <div id="reviews" class="feat-prod">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/watch?v=lQRuRIx6k_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+<!--   guides section -->
+  <div id="guides" class="content">
+    <div class="guide">
+      <div class="guide-title"><span>Phone Guide</span></div>
+      <p class="price">Free</p>
+      <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      <button type="button">SELECT</button>
+    </div>
+    <div class="guide">
+      <div class="guide-title"><span>Laptop Guide</span></div>
+      <p class="price">Free</p>
+        <ul>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+        <button type="button">SELECT</button>
+    </div>
+    <div class="guide">
+      <div class="guide-title"><span>Tablet Guide</span></div>
+      <p class="price">Free</p>
+        <ul>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+        <button type="button">SELECT</button>
+    </div>
+  </div>
+</main>
+  <!--   footer -->
+  <footer class="content">
+    <div id="foot-menu">
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div id="copyright">
+      <p>Copyright 2022 Apple Inc.</p>
+    </div>
+  </footer>
+  
+</div>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+@import {
+  url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=MuseoModerno:wght@100;400&family=Raleway&display=swap");
+}
+
+* {
+  box-sizing: border-box;  
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  font-family: San Francisco, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 20px;
+  background-color: #FCFCFC;  
+
+}
+
+/* header */
+img {
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav ul li:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+nav {
+  display: inline-block;
+}
+
+header {
+  padding: 15px 50px 0 50px; /* remove top padding for passing user story */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 5;
+}
+
+ main {
+   padding-top: 100px;
+ }
+
+.content {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+/* simple form */
+
+#subscribe {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#subscribe h3 {
+  font-size: 150%;
+}
+
+#subscribe form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subscribe input {
+  margin: 10px 0;
+}
+
+#subscribe input[type='submit'] {
+  width: 30%;
+  background-color: #E1DED9;
+  border: none;
+  padding: 10px 0; 
+  font-size: 110%;
+}
+
+#subscribe input[type='submit']:hover {
+  cursor: pointer;
+  background-color: #E3E3E3;
+  box-shadow: 0 0 2px #E1DED9;
+  color: #333333;
+}
+
+#subscribe input[type='email'] {
+  width: 70%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #AAAAAA;
+  background-color: transparent; 
+  font-size: 110%;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+#subscribe input[type='email']:hover {
+  border-bottom: 5px solid #AAAAAA;
+}
+
+/* get rid of autofill background color of input in chrome */
+#subscribe input[type='email']:-webkit-autofill,
+#subscribe input[type='email']:-webkit-autofill:hover, 
+#subscribe input[type='email']:-webkit-autofill:focus, 
+#subscribe input[type='email']:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #FCFCFC inset;
+}
+
+/* shop section */
+
+#shop {
+  margin: 50px 0;  
+}
+
+.feat-prod {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.img {
+  margin: 40px;
+}
+
+.img img {
+  transform: scale(1.4);
+}
+
+.marketing-desc {
+  margin: 40px 0;
+}
+
+/* guides */
+
+#guides {
+  margin: 80px auto;
+  display: flex;
+  text-align: center; 
+}
+
+#guides ul {
+  list-style-type: none; 
+  line-height: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.guide {
+  width: calc(100%/3);
+  border: 1px solid #DDD6D0;
+  margin: 0px 20px;
+}
+
+.guide-title {
+  background-color: #DDD6D0;
+  padding: 20px 0;
+  font-size: 1.1rem;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#guides button {
+  margin: 20px 0;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+  border-radius: none;
+  border: 1px solid black;
+  background-color: inherit;
+  color: black;
+  font-weight: 600;
+  transition: all .4s ease;
+}
+
+#guides button:hover {
+  background-color: #757575;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #757575;
+}
+
+/* page footer */
+
+footer {
+  text-align: right;
+  background-color: #DDD6D0;
+  padding: 20px 20px 5px 0;
+  line-height: 0.8rem;
+  font-size: 0.9rem;
+}
+
+#foot-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#foot-menu ul li:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+#foot-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* responsive  */
+
+@media (max-width: 960px) {
+  
+/*   shop */
+  .feat-prod .img {
+    display: none; 
+  }
+  
+   #shop {
+    margin: 0 auto;
+  }
+  
+/*   guides */
+  #guides {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .guide {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+/*   footer */
+  footer {
+    width: 100vw!important;
+  }
+}
+
+@media (min-width: 1468px) {
+  
+  .content {
+    width: calc(100% - 500px);
+  }
+  
+  #shop {
+    margin: 0 auto;
+  }
+
+}
+
+@media ( max-width: 610px) {
+  
+  /* comment out header to pass user story for fixed nav-bar at top */
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  #nav-bar {
+    background: rgba(225, 222, 217, 0.8);
+    width: 100%;
+  }
+  
+  main {
+    margin-top: 150px;
+  }
+  
+  nav ul {
+    justify-content: center;
+  }
+}
+
+
+
+** end of undefined **
+
