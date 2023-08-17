@@ -9,7 +9,7 @@ Table Of Contents:
 2. JavaScript Projects
 3. Front End Development Libraries Projects
 4. Data Visualization Projects
-5. RElational Database Projects
+5. Relational Database Projects
 6. Back End Development and API Projects
 7. Quality Assurance Projects
 8. Scientific Computing with Pyton Projects
